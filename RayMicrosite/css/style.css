@@ -16,6 +16,10 @@ body {
 
 /*--------Guide Window--------*/
 
+.guideWindow {
+	position:fixed;
+}
+
 .guideIcon {
 	position:absolute;
 	left:50%;
@@ -34,7 +38,7 @@ body {
 	z-index:999;
 }
 .guideBg {
-	position:fixed;
+	position:absolute;
 	background-color:#000;
 	opacity: 0;
 	width:100%;
