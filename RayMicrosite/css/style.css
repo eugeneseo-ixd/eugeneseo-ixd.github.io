@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* main */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+* {
+	text-decoration:none;
+}
+	
+body {
+	font-family: 'Roboto', sans-serif;
+	margin:0; padding:0;
+	overflow-x:hidden;
+}
+
+
+
+/*--------Guide Window--------*/
+
+.guideIcon {
+	position:absolute;
+	left:50%;
+	margin-left:-65px;
+	top:50%;
+	margin-top:-130px;
+	z-index:999;
+}
+
+.guideText {
+	position:absolute;
+	left:50%;
+	margin-left:-216px;
+	top:50%;
+	margin-top:-10px;
+	z-index:999;
+}
+.guideBg {
+	position:absolute;
+	background-color:#000;
+	opacity: 0;
+	width:100%;
+	height:100%;
+	z-index:998;
+}
+.closeBtn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top:50%;
+  margin-top:70px;
+  left:50%;
+  margin-left:-75px;
+  text-transform: uppercase;
+  text-align:center;
+
+  width:150px; height:34px;
+  background: #1d3fd6;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+
+   z-index:999;
+}
+
+.closeBtn svg {
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.closeBtn:hover {
+  background:#001999;
+  letter-spacing: 1px;
+}
+
+
+
+
+/*------GNB--------*/
+
+.main_header {
+	width: 2000px;
+	margin: 0 auto;
+}
+
+.main_header .nav {
+	width: 100%;
+	max-width:2000px;
+	height: 58px;
+	position: fixed;
+	display: block;
+
+	background:url(../image/gnb/gnb.png) no-repeat;
+	z-index:99;
+}
+
+
+#logo {	float: left; margin: 18px 40px; }
+
+.nav .menu { position:relative;	float:right;}
+.nav .snsLink { position:relative;	float:right; right:40px;}
+
+.nav .menu li, .nav .snsLink li {
+	float: left; list-style: none; 	padding: 0 5px; }
+.nav .menu li {
+	margin-top: 8px; }
+.nav .menu #slash {
+	display:block;
+	width:7px; height:8px;
+	background:url(../image/gnb/menu_slash.png) no-repeat center;
+	padding: 0px 13px;
+}
+
+#menu01, #menu02, #menu03, #menu04, #menu05, #menu06,
+#snsBtn01, #snsBtn02, #snsBtn03, #snsBtn04 {
+	display: block;	margin:auto;
+	-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+}
+.menu #menu01 {width:39px;	height:10px;	background:url(../image/gnb/01main.png); }
+.menu #menu02 {width:52px;	height:10px;	background:url(../image/gnb/02vr.png);}
+.menu #menu03 {width:68px;	height:10px;	background:url(../image/gnb/03exterior.png);}
+.menu #menu04 {width:65px;	height:10px;	background:url(../image/gnb/04interior.png);}
+.menu #menu05 {width:44px;	height:10px;	background:url(../image/gnb/05space.png);}
+.menu #menu06 {width:33px;	height:10px;	background:url(../image/gnb/06spec.png);}
+
+.nav .snsLink #snsBtn01, .nav .snsLink #snsBtn02, .nav .snsLink #snsBtn03
+{ width:26px;	height:26px;	background:url(../image/gnb/snsBtn01.png); }
+
+.nav .snsLink #snsBtn01:hover, .nav .snsLink #snsBtn02:hover, .nav .snsLink #snsBtn03:hover
+{background:url(../image/gnb/snsBtn01_over.png); }
+
+
+
+.wrap{
+  width:2000px;
+  margin: 0 auto;
+
+  left: 50%;
+  margin-left: -1000px;
+  position:absolute;
+  
+}

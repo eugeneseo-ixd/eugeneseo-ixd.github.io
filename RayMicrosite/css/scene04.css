@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page04 {
+	height:280px;
+	position:relative;
+}
+
+.page04 .rbBg{
+	position:absolute;
+}
+
+.page04 .rbCar{
+	position:absolute;
+}
+
+.page04 .rbTxt{
+	position:absolute;
+	margin-top:50px;
+}

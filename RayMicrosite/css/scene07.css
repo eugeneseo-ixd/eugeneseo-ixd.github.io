@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page07 {
+	height:1000px;
+	position:relative;
+}
+#s07_bg {
+	position:absolute;
+}
+
+.page07 .titleNum 	{position:absolute; margin-top:191px;	margin-left:401px;	opacity:0;}
+.page07 .titleSmall {position:absolute; margin-top:246px;	margin-left:430px;	opacity:0;}
+.page07 .titleBig 	{position:absolute; margin-top:294px;	margin-left:427px;	opacity:0;}
+.page07 .titleBigSub{position:absolute; margin-top:341px;	margin-left:427px;	opacity:0;}
+.page07 .bodytext 	{position:absolute; margin-top:348px;	margin-left:460px;	opacity:0;}
+
+.page07 .browseBtn {
+  color: #fff;
+  display: block;
+
+  position: absolute;
+  margin-top:485px;
+  left:462px;
+  text-transform: uppercase;
+  text-align:center;
+
+  width:176px; height:36px;
+  background: #156cea;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+
+.page07 .browseBtn:hover {
+  background: #0cbbfc;
+  letter-spacing: 1px;
+}
+
+.page07 .bannerT	{position:absolute; margin-top:365px; margin-left:1025px; opacity:0; z-index:11;}
+.page07 .bannerM_2	{position:absolute; margin-top:380px; margin-left:1030px; opacity:0; z-index:10;}
+.page07 .bannerM_1	{position:absolute; margin-top:385px; margin-left:1000px; opacity:0; z-index:10;}
+.page07 .bannerS	{position:absolute; margin-top:395px; margin-left:1025px; opacity:0; z-index:10; 
+					 mix-blend-mode: multiply;}
+
+.page07 .rightCarM {position:absolute;	margin-top:150px;	margin-left:1265px; opacity:0;}
+.page07 .rightCarS {position:absolute;	margin-top:705px;	margin-left:377px; opacity:0;}
+.page07 .rightCar  {position:absolute;	margin-top:461px;	margin-left:1050px; opacity:0;}
+	
+	
+.page07 .featureIcon {position:absolute;	margin-top:608px;	margin-left:464px;}
+
+.page07 .feature {position:absolute; margin-top:605px; margin-left:438px; }
+.page07 .feature ul li {list-style:none; float:left; padding:0px 41px 0px 0px;}
+
+.page07 .fIcon01:hover, .fIcon02:hover, .fIcon03:hover, .fIcon04:hover {
+	    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+		    transform: rotate(7deg);
+			transition: all 0.2s;
+}

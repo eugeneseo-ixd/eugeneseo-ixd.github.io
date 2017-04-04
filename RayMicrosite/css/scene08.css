@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page08 {
+	height:278px;
+	position:relative;
+}
+#s08_bg {
+	position:absolute;
+}
+
+.page08 .snsLink {
+	position:absolute;
+	top:140px;
+	left:904px;}
+
+.page08 .snsLink li {
+	float:left; list-style:none;	padding: 0 14px 0 0;
+}
+
+.page08 .snsLink #snsBtn01 { width:33px;	height:34px;}
+.page08 .snsLink #snsBtn02 { width:33px;	height:34px;}
+.page08 .snsLink #snsBtn03 { width:33px;	height:34px;}
+.page08 .snsLink #snsBtn04 { width:33px;	height:34px;}
+
+.page08 .snsLink #snsBtn01, .page08 .snsLink #snsBtn02,
+.page08 .snsLink #snsBtn03, .page08 .snsLink #snsBtn04
+{background:url(../image/scene08/snsBtn.png); }
+
+.page08 .snsLink #snsBtn01:hover, .page08 .snsLink #snsBtn02:hover,
+.page08 .snsLink #snsBtn03:hover, .page08 .snsLink #snsBtn04:hover
+{background:url(../image/scene08/snsBtnOver.png); }

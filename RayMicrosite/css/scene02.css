@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page02 {
+	height:1000px;
+	position:relative;
+}
+#s02_bg {
+	position:absolute;
+}
+
+.bgPtt01, .bgPtt02, .bgPtt03 {
+	position:absolute;
+	margin-top:-50px;
+}
+
+.bgPtt01 { left:50%;	margin-left:-440px; opacity: 0;}
+.bgPtt02 { left:50%;	margin-left:-900px; opacity: 0;}
+.bgPtt03 { left:50%;	margin-left:-1000px; opacity: 0;}
+
+.page02 .titleNum {
+	position:absolute;	margin-top:191px;	margin-left:782px;	opacity: 0;}
+
+.page02 .titleSmall {
+	position:absolute;	margin-top:246px;	margin-left:814px;	opacity: 0;}
+
+.page02 .titleBig {
+	position:absolute;	margin-top:269px;	margin-left:634px;	opacity: 0;}
+
+.page02 .line {
+	position:absolute;
+	width:2px;	height:0px;
+	margin-top:244px;	margin-left:999px;
+	background-color:#89dadb;}
+
+.page02 .bodytext {
+	position:absolute;	margin-top:249px;	margin-left:1028px;	opacity: 0;}
+	
+	
+.page02 .ext {
+	position:relative;	display:inline-block;	left:50%;
+	margin-top:469px;	margin-left:-68px;	margin-right:20px;
+}
+.page02 .int {
+	position:relative;	display:inline-block;	left:50%;
+}
+.page02 .int h1, .page02 .ext h1 {
+	font-size:12px;
+	color:#333;
+}
+
+.page02 .int h1:hover, .page02 .ext h1:hover {
+	color:#000;
+	border-bottom: 1px solid black;
+}
+
+.page02 .vrCar{
+	position:absolute;	margin-top:509px;	margin-left:603px;
+}

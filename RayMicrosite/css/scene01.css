@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.page01 .browseBtn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+
+  position: absolute;
+  top:860px;
+  left:900px;
+  text-transform: uppercase;
+  text-align:center;
+
+  width:176px; height:36px;
+  background: #1ee8fa;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+
+}
+
+.page01 .obj01 {
+	position:absolute;
+	left:70px;
+	top: 685px;
+	z-index:10;
+}
+
+.page01 .obj02 {
+	position:absolute;
+	left:1615px;
+	top: 691px;
+	z-index:10;
+}
+
+h1 {
+	font-size: 13.5px;
+	font-weight:700;
+}
+
+.browseBtn svg {
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*
+.browseBtn rect {
+  fill: none;
+  stroke: #;
+  stroke-width: 5;
+  stroke-dasharray: 422, 0;
+}*/
+
+.browseBtn:hover {
+  background:#001999;
+  letter-spacing: 1px;
+}
+
+/*
+.browseBtn:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 33;
+  
+  -webkit-transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+		  transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+*/

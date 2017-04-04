@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page06 {
+	height:1000px;
+	position:relative;
+}
+#s06_bg {
+	position:absolute;
+}
+
+.page06 .titleNum 	{position:absolute; margin-top:191px;	margin-left:935px;	opacity:0;}
+.page06 .titleSmall {position:absolute; margin-top:246px;	margin-left:940px;	opacity:0;}
+.page06 .titleBig 	{position:absolute; margin-top:294px;	margin-left:855px;	opacity:0;}
+.page06 .bodytext 	{position:absolute; margin-top:325px;	margin-left:858px;	opacity:0;}
+
+.page06 .leftCarM {
+	position:absolute;
+	top: -240px;
+	left: 40px;
+	z-index:9;
+	opacity:0;
+}
+.page06 .leftCarS {
+	position:absolute;
+	top:73px;
+	left:57px;
+	mix-blend-mode: multiply;
+	z-index:9;
+	opacity:0;
+}
+.page06 .leftCar{
+	position:absolute;
+	left: 59px;
+	top:-175px;
+	z-index:9;
+	opacity:0;
+}
+
+
+
+
+.page06 .slideBox{
+	position:absolute;
+	left:50%;
+	top:429px;
+	width:994px;
+	height:410px;
+	margin-left:-497px;
+	background-image:url(../image/scene06/slidebg.png);
+}
+
+.page06 .slideBox .slides .slidesjs-next{
+	position:absolute;
+	top:180px;
+	left:50%;
+	margin-left:443px;
+	z-index:10;
+	width:23px;
+	height:48px;
+	background:url(../image/scene06/nextBtn.png) no-repeat;
+}
+.page06 .slideBox .slides .slidesjs-pagination{
+	float:left;
+display:block;	
+	position:absolute;
+	top:330px;
+	left:50%;
+	margin-left:143px;
+	z-index:10;
+	list-style:none;
+}
+
+.page06 .slideBox .slides .slidesjs-control > div{
+	width:1400px;
+	height:1000px;
+}
+.page06 .slideBox .slides .slidesjs-control > div .left{
+	float:left;
+	width:700px;
+	height:1000px;
+}
+.page06 .slideBox .slides .slidesjs-control > div .right{
+	float:right;
+	width:700px;
+	height:1000px;
+}
+
+.page06 .slideBox .slides > div .left .carPhoto{
+	position:absolute;
+	top:8px;
+	left:50%;
+	margin-left:-489px;
+	z-index:9;
+}
+
+.page06 .slideBox .slides > div .right .fIcon{
+	position:absolute;
+	top:60px;
+	left:50%;
+	margin-left:161px;
+	z-index:9;
+}
+.page06 .slideBox .slides > div .right .fText{
+	position:absolute;
+	top:242px;
+	left:50%;
+	margin-left:100px;
+	z-index:9;
+}
