@@ -17,10 +17,12 @@ body {
 /*--------Guide Window--------*/
 
 .guideWindow {
+	position:fixed;
+	display:block;
 }
 
 .guideIcon {
-	position:absolute;
+	position:relative;
 	left:50%;
 	margin-left:-65px;
 	top:50%;
@@ -29,7 +31,7 @@ body {
 }
 
 .guideText {
-	position:absolute;
+	position:relative;
 	left:50%;
 	margin-left:-216px;
 	top:50%;
@@ -37,8 +39,7 @@ body {
 	z-index:999;
 }
 .guideBg {
-	position:fixed;
-	display:block;
+	position:relative;
 	background-color:#000;
 	opacity: 0;
 	width:100%;
@@ -49,7 +50,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: block;
-  position: absolute;
+  position: relative;
   top:50%;
   margin-top:70px;
   left:50%;
