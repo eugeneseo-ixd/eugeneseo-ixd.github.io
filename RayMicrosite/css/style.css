@@ -35,7 +35,7 @@ body {
 }
 
 .guideBg {
-	position:fixed;
+	position:absolute;
 	background-color:#000;
 	opacity: 0;
 	width:100%;
