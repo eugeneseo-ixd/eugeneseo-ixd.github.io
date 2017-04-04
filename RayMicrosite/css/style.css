@@ -46,7 +46,6 @@ body {
 .closeBtn {
   color: #fff;
   cursor: pointer;
-  display: block;
   position: absolute;
   top:50%;
   margin-top:70px;
