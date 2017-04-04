@@ -18,6 +18,7 @@ body {
 
 .guideWindow {
 	position:fixed;
+	display:block;
 }
 
 .guideIcon {
