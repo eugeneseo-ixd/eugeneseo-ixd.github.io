@@ -18,10 +18,12 @@ body {
 
 .guideWindow {
 	position:fixed;
+	display: block;
 }
 
 .guideIcon {
 	position:relative;
+	display: block;
 	left:50%;
 	margin-left:-65px;
 	top:50%;
@@ -31,6 +33,7 @@ body {
 
 .guideText {
 	position:relative;
+	display: block;
 	left:50%;
 	margin-left:-216px;
 	top:50%;
