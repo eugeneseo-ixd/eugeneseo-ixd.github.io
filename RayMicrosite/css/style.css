@@ -34,7 +34,7 @@ body {
 	z-index:999;
 }
 .guideBg {
-	position:absolute;
+	position:fixed;
 	background-color:#000;
 	opacity: 0;
 	width:100%;
