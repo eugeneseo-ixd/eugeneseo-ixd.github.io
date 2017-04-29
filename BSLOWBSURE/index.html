@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+
+<link rel = "stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/common.js"></script>
+<html>
+
+<body>
+
+
+<div id="app" class="">
+    <div id="nav_wrap">
+        <ul id="nav_list">
+            <li> <a href="#scene01" id="menu01" alt="HOME"> HOME </a>
+            <li> <a href="#scene02" id="menu02" alt="MEET SEO"> MEET SEO </a>
+            <li> <a href="#scene03" id="menu03" alt="WORKS"> WORKS </a>
+            <li> <a href="#scene05" id="menu04" alt="CONTACT"> CONTACT </a>
+        </ul>
+        <div id="footer">
+            <p1>B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX/UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
+            <p1 id="footer_contact">+82)10.8886.4272</br>SEOUUUU@GMAIL.COM</br></br></p1>
+            <p1>(c)2017. Eugene Seo all rights reserved.</p1>
+        </div>
+    </div>
+
+    <nav>
+        <div id= "nav_bar">
+            <div id="nav_icon" onclick="togNav()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div id="menuBtn"> </div>
+            <div id="logo"> </div>
+        </div>
+    </nav>
+    
+    <div id="content">
+        <h1> HELLO STRANGER... </br>MH?</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>HELLO?</h1>
+    </div>
+
+</div>
+
+<script>
+
+function togNav() {
+    var nav_wrap = document.getElementById("nav_wrap");
+    var nav_bar = document.getElementById("nav_bar");
+    var content = document.getElementById("content");
+    
+    if (nav_bar.style.marginLeft < '300px') {
+        nav_wrap.style.marginLeft = '0';
+        nav_bar.style.marginLeft = '320px';
+        content.style.marginLeft = '420px';
+    } else {
+        nav_wrap.style.marginLeft = '-320px';
+        nav_bar.style.marginLeft = '0';
+        content.style.marginLeft = '100px';    }
+}
+
+/*---
+function openNav() {
+    document.getElementById("nav_wrap").style.marginLeft = "0";
+    document.getElementById("nav_bar").style.marginLeft = "320px";
+    document.getElementById("content").style.marginLeft = "420px";
+}
+function closeNav() {
+    document.getElementById("nav_wrap").style.marginLeft = "-320px";
+    document.getElementById("nav_bar").style.marginLeft = "0";
+    document.getElementById("content").style.marginLeft = "100px";
+}
+---*/
+</script>
+
+
+</body>    
+</html>
