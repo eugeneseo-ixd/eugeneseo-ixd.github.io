@@ -1,31 +1,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
 <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-
-<link rel = "stylesheet" type="text/css" href="css/style.css" />
 <script type="text/javascript" src="js/common.js"></script>
 <html>
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700i" rel="stylesheet">    
+<link rel = "stylesheet" type="text/css" href="css/style.css" />
+<link rel = "stylesheet" type="text/css" href="css/w3.css" />
+
 
 <body>
 
-
-<div id="app" class="">
+<div id="app">
     <div id="nav_wrap">
         <ul id="nav_list">
-            <li> <a href="#scene01" id="menu01" alt="HOME"> HOME </a>
+            <li> <a href="#scene00" id="menu01" alt="HOME"> HOME </a>
             <li> <a href="#scene02" id="menu02" alt="MEET SEO"> MEET SEO </a>
-            <li> <a href="#scene03" id="menu03" alt="WORKS"> WORKS </a>
-            <li> <a href="#scene05" id="menu04" alt="CONTACT"> CONTACT </a>
+            <li> <a href="#scene03" id="menu04" alt="WORKS"> WORKS </a>
+            <li> <a href="#scene04" id="menu05" alt="CONTACT"> CONTACT </a>
         </ul>
         <div id="footer">
-            <p1>B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX/UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
-            <p1 id="footer_contact">+82)10.8886.4272</br>SEOUUUU@GMAIL.COM</br></br></p1>
-            <p1>(c)2017. Eugene Seo all rights reserved.</p1>
+            <p1>B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX&#47;UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
+            <p1 id="footer_contact">&#43;82&#41;10.8886.4272</br>SEOUUUU&#64;GMAIL.COM</br></br></p1>
+            <p1>&copy;2017. Eugene Seo all rights reserved.</p1>
         </div>
     </div>
 
@@ -36,47 +37,79 @@
               <span></span>
               <span></span>
             </div>
-            <div id="menuBtn"> </div>
-            <div id="logo"> </div>
+            <ul id="pg_nav">
+                <li> <a href="#scene00"> &diams; </a> </li>
+                <li> <a href="#scene02"> &diams; </a> </li>
+                <li> <a href="#scene04"> &diams; </a> </li>
+                <li> <a href="#scene05"> &diams; </a> </li>
+            </ul>
+            <div id="logo">
+                <a style="color:#3a3a3a"> B SLOW </a>
+                <a style="color:#3a3a3a" id="noneStyle"> &diams;</a>
+                <a style="color:#4379e6"> B SURE </a>
+            </div>
         </div>
     </nav>
-    
-    <div id="content">
-        <h1> HELLO STRANGER... </br>MH?</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>HELLO?</h1>
-    </div>
-
 </div>
 
-<script>
+<div id="con_wrap">
+    
+    <div id="scene00"></div>
+    <div id="scene01">
+        <h1>HOME</h1>
+    </div>
+    
+    <div id="scene02">
+        <div id="intro01"></div>
+        <div id="intro03"></div>
+    </div>
 
+    <div id="scene03">
+        <h1>WORKS</h1>
+    </div>
+    
+    <div id="scene04">
+        <div class="w3-row">
+            <div class="w3-half">
+                <div id="work01"></div>
+                <div id="work02"></div>
+                <div id="work03"></div>
+            </div>
+
+            <div class="w3-half">
+                <div id="work04"></div>
+                <div id="work05"></div>
+                <div id="work06"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="scene05">
+        <h1>CONTACT</h1>
+    </div>
+    
+</div>
+
+
+
+
+<script>
+    
 function togNav() {
     var nav_wrap = document.getElementById("nav_wrap");
     var nav_bar = document.getElementById("nav_bar");
-    var content = document.getElementById("content");
     
     if (nav_bar.style.marginLeft < '300px') {
         nav_wrap.style.marginLeft = '0';
-        nav_bar.style.marginLeft = '320px';
-        content.style.marginLeft = '420px';
+        nav_bar.style.marginLeft = '320px';;
     } else {
         nav_wrap.style.marginLeft = '-320px';
-        nav_bar.style.marginLeft = '0';
-        content.style.marginLeft = '100px';    }
+        nav_bar.style.marginLeft = '0';}
 }
 
-/*---
-function openNav() {
-    document.getElementById("nav_wrap").style.marginLeft = "0";
-    document.getElementById("nav_bar").style.marginLeft = "320px";
-    document.getElementById("content").style.marginLeft = "420px";
-}
-function closeNav() {
-    document.getElementById("nav_wrap").style.marginLeft = "-320px";
-    document.getElementById("nav_bar").style.marginLeft = "0";
-    document.getElementById("content").style.marginLeft = "100px";
-}
----*/
 </script>
+
+
 
 
 </body>    
