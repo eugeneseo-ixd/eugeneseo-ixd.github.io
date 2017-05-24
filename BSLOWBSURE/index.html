@@ -16,10 +16,10 @@
 
 
 <body>
-
+<!----CLASS NAME STARTED WITH 're-' MEANS RESPONSIBLE---->
 <!----SIDE BAR DEFAULT---->
-<div id="app" class="w3-hide-small">
-    <div class="w3-sidebar nav_wrap" id="side_nav_wrap">
+<div id="app" class="re-hide-small">
+    <div class="nav_wrap" id="side_nav_wrap">
         <ul id="nav_list">
             <li> <a href="#scene00" id="menu01" alt="HOME"> HOME </a>
             <li> <a href="#scene02" id="menu02" alt="MEET SEO"> MEET SEO </a>
@@ -27,20 +27,20 @@
             <li> <a href="#scene05" id="menu05" alt="CONTACT"> CONTACT </a>
         </ul>
         <div id="footer">
-            <p1>B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX&#47;UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
+            <p1 class="hide-narrow">B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX&#47;UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
             <p1 id="footer_contact">&#43;82&#41;10.8886.4272</br>SEOUUUU&#64;GMAIL.COM</br></br></p1>
             <p1>&copy;2017. Eugene Seo all rights reserved.</p1>
         </div>
     </div>
 
     <nav>
-        <div id= "nav_bar" class="w3-sidebar w3-hide-small">
+        <div id="nav_bar">
             <div class="nav_icon" onclick="togNav()">
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <ul id="pg_nav">
+            <ul id="pg_nav" class="hide-narrow">
                 <li> <a href="#scene00"> &diams; </a> </li>
                 <li> <a href="#scene02"> &diams; </a> </li>
                 <li> <a href="#scene04"> &diams; </a> </li>
@@ -56,7 +56,7 @@
 </div>
 
 <!----TOP BAR ON SMALL SCREEN---->
-<div id="top_app" class="w3-hide-large w3-hide-medium">
+<div id="top_app" class="re-hide-large">
     <div class="nav_wrap" id="top_nav_wrap">
         <div id="nav_icon_close" onclick="togNav_close()">
           <span></span>
@@ -72,7 +72,7 @@
         </ul>
     </div>
 
-    <nav class="w3-top" id="top_bar">
+    <nav id="top_bar">
         <div id="nav_icon" onclick="togNav_open()">
           <span></span>
           <span></span>
@@ -140,9 +140,9 @@ function togNav() {
     
     if (nav_bar.style.marginLeft < '300px') {
         nav_wrap.style.marginLeft = '0';
-        nav_bar.style.marginLeft = '320px';
+        nav_bar.style.marginLeft = '300px';
     } else {
-        nav_wrap.style.marginLeft = '-320px';
+        nav_wrap.style.marginLeft = '-300px';
         nav_bar.style.marginLeft = '0';
     }
 }

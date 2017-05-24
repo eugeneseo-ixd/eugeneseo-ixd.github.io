@@ -1,3 +1,21 @@
+@media screen and (max-height: 600px) {
+    .hide-narrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .re-hide-small {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .re-hide-large {
+        display: none;
+    }
+}
+
 * {
 	margin:0; padding:0;
     text-decoration: none;
@@ -5,16 +23,21 @@
     letter-spacing: -0.4pt;
 }
 
-#app, #nav_bar {
+#app {
+    height: 100%;
     -webkit-transition: all 0.7s;
     position: absolute;
     overflow-x: hidden;
     z-index: 99;
+    position: fixed;
 }
 
 #nav_bar {
+    background-color: #FFF;
     height: 100%;
     width: 80px;
+    position: fixed;
+    -webkit-transition: all 0.7s;
 }
 
 #con_wrap {
@@ -26,8 +49,8 @@
 
 #app .nav_wrap {
     -webkit-transition: all 0.7s;
-    margin-left: -320px;
-	width: 320px; height: 100%;
+    margin-left: -300px;
+	width: 300px; height: 100%;
     background-color: #4d5258;    
     position: fixed;
 }
@@ -59,7 +82,7 @@
     top:50%; left:35px;
     font-size: 17pt;
     line-height: 1.5;
-    margin: -80px 0 0 0;
+    margin-top: -100px;
     list-style:none;
     position:absolute;
     
@@ -187,10 +210,11 @@
     overflow: hidden
 }
 #nav_bar ul {
-    margin-left: 35px;
     font-size: 10pt;
     line-height: 1.2;
-    top: 43%;
+    top: 50%;
+    margin-left: 35px;
+    margin-top: -65px;
     position:absolute;
 }
 
