@@ -5,7 +5,7 @@
     letter-spacing: -0.4pt;
 }
 
-#app, #nav_bar, #top_app {
+#app, #nav_bar {
     -webkit-transition: all 0.7s;
     position: absolute;
     overflow-x: hidden;
