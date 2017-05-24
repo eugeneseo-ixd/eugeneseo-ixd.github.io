@@ -15,13 +15,14 @@
 
 <body>
 
-<div id="app">
-    <div id="nav_wrap">
+<!----SIDE BAR DEFAULT---->
+<div id="app" class="w3-sidebar w3-bar-block w3-small w3-hide-small">
+    <div class="nav_wrap" id="side_nav_wrap">
         <ul id="nav_list">
             <li> <a href="#scene00" id="menu01" alt="HOME"> HOME </a>
             <li> <a href="#scene02" id="menu02" alt="MEET SEO"> MEET SEO </a>
             <li> <a href="#scene03" id="menu04" alt="WORKS"> WORKS </a>
-            <li> <a href="#scene04" id="menu05" alt="CONTACT"> CONTACT </a>
+            <li> <a href="#scene05" id="menu05" alt="CONTACT"> CONTACT </a>
         </ul>
         <div id="footer">
             <p1>B SLOW B SURE</br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX&#47;UI. GRAPHIC</br></br>SEOUL, REPUBLIC OF KOREA</br></br></p1>
@@ -31,8 +32,8 @@
     </div>
 
     <nav>
-        <div id= "nav_bar">
-            <div id="nav_icon" onclick="togNav()">
+        <div id= "nav_bar" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <div class="nav_icon" onclick="togNav()">
               <span></span>
               <span></span>
               <span></span>
@@ -44,16 +45,52 @@
                 <li> <a href="#scene05"> &diams; </a> </li>
             </ul>
             <div id="logo">
-                <a style="color:#3a3a3a"> B SLOW </a>
-                <a style="color:#3a3a3a" id="noneStyle"> &diams;</a>
-                <a style="color:#4379e6"> B SURE </a>
+                <span style="color:#3a3a3a"> B SLOW </span>
+                <span style="color:#3a3a3a" id="noneStyle"> &diams;</span>
+                <span style="color:#4379e6"> B SURE </span>
             </div>
         </div>
     </nav>
 </div>
 
+<!----TOP BAR ON SMALL SCREEN---->
+<div id="top_app" class="w3-top w3-hide-large w3-hide-medium">
+    <nav id="top_bar">
+        <div id="nav_icon" onclick="togNav_open()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="logo">
+            <a href="#scene00">
+                <span style="color:#3a3a3a"> B SLOW </span>
+                <span style="color:#3a3a3a" id="noneStyle"> &diams;</span>
+                <span style="color:#4379e6"> B SURE </span>
+            </a>
+        </div>
+
+        <div id="contact"></div>
+    </nav>
+
+    <div class="nav_wrap" id="top_nav_wrap">
+        <div id="nav_icon_close" onclick="togNav_close()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul id="nav_list">
+            <li> <a href="#scene00" id="menu01" alt="HOME" onclick="togNav_close()"> HOME </a>
+            <li> <a href="#scene02" id="menu02" alt="MEET SEO" onclick="togNav_close()"> MEET SEO </a>
+            <li> <a href="#scene03" id="menu04" alt="WORKS" onclick="togNav_close()"> WORKS </a>
+            <li> <a href="#scene04" id="menu05" alt="CONTACT" onclick="togNav_close()"> CONTACT </a>
+        </ul>
+    </div>
+</div>
+
+<!----CONTENTS START---->
 <div id="con_wrap">
-    
     <div id="scene00"></div>
     <div id="scene01">
         <h1>HOME</h1>
@@ -96,17 +133,28 @@
 <script>
     
 function togNav() {
-    var nav_wrap = document.getElementById("nav_wrap");
+    var nav_wrap = document.getElementById("side_nav_wrap");
     var nav_bar = document.getElementById("nav_bar");
     
     if (nav_bar.style.marginLeft < '300px') {
         nav_wrap.style.marginLeft = '0';
-        nav_bar.style.marginLeft = '320px';;
+        nav_bar.style.marginLeft = '320px';
     } else {
         nav_wrap.style.marginLeft = '-320px';
-        nav_bar.style.marginLeft = '0';}
+        nav_bar.style.marginLeft = '0';
+    }
+}
+ 
+function togNav_open() {
+    var nav_wrap2 = document.getElementById("top_nav_wrap");    
+    nav_wrap2.style.marginLeft = '0';
 }
 
+function togNav_close() {
+    var nav_wrap2 = document.getElementById("top_nav_wrap");
+    nav_wrap2.style.marginLeft = '-100%';
+}
+    
 </script>
 
 

@@ -25,15 +25,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     'use strict';
-	$('#nav_icon').click(function () {
+	$('.nav_icon').click(function () {
 		$(this).toggleClass('open');
 	});
 });
-/*---
-$(document).ready(function () {
-    'use strict';
-    var x = screen.width;
-
-    document.getElementById("work01").css.width = "500px";
-    document.getElementById("work01").css.height = "100px";
-});---*/
