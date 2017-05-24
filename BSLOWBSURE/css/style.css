@@ -38,7 +38,6 @@
     width: 80px;
     position: fixed;
     -webkit-transition: all 0.7s;
-    z-index:99;
 }
 
 #con_wrap {
