@@ -4,13 +4,25 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     .re-hide-small {
         display: none;
     }
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 481px) {
+    .re-hide-large {
+        display: none;
+    }
+}
+
+@media handheld and (max-width: 480px) {
+    .re-hide-small {
+        display: none;
+    }
+}
+
+@media handheld and (min-width: 481px) {
     .re-hide-large {
         display: none;
     }
