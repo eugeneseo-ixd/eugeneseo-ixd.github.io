@@ -231,12 +231,11 @@
 }
 
 #nav_symbol_m {
-    background-image: url(../img/nav_symbol.png');
-    background-repeat: no-repeat;
     width: 90px; height: 90px;
     margin-left: calc(50% - 45px);
     margin-top: 80px;
-    position:absolute;    
+    background-image: url(../img/nav_symbol.png);
+    background-repeat: no-repeat;
 }
 
 #nav_list {
