@@ -4,13 +4,13 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .re-hide-small {
         display: none;
     }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 601px) {
     .re-hide-large {
         display: none;
     }
@@ -228,6 +228,7 @@
     margin-left: 37px;
     background-image: url(../img/nav_symbol.png);
     background-repeat: no-repeat;
+    position: absolute;
 }
 
 #nav_symbol_m {
@@ -236,6 +237,7 @@
     margin-top: 80px;
     background-image: url(../img/nav_symbol.png);
     background-repeat: no-repeat;
+    position: absolute;
 }
 
 #nav_list {
