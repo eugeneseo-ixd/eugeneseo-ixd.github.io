@@ -4,7 +4,7 @@
     }
 }
 
-@-webkit-media all and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .re-hide-small {
         display: none;
     }
@@ -66,16 +66,23 @@
 }
 
 #top_app .nav_wrap ul {
-    width: 250px;
-    height: 300px;
-    font-size: 40pt;
-    margin-left: calc(50% - 125px);
+    width: 100%;
+    height: 250px;
+    font-size: 26pt;
+    line-height: 1.8;
     top: 50%;
-    margin-top: -150px;
+    margin-top: -90px;
     list-style:none;
     text-align: center;
     overflow: hidden;
     position:absolute;
+}
+
+#top_app .nav_wrap ul li span {
+    height: 2px;
+    width:100%;
+    display: block;
+    background-color: #767676;
 }
 
 #app .nav_wrap ul {
@@ -91,8 +98,8 @@
 }
 
 .nav_wrap ul li a {-webkit-transition: all 0.0s;}
-.nav_wrap ul li a:link    {color:#c2c2c2;}
-.nav_wrap ul li a:visited {color:#c2c2c2;}
+.nav_wrap ul li a:link    {color:#d7d7d7;}
+.nav_wrap ul li a:visited {color:#d7d7d7;}
 .nav_wrap ul li a:hover   {color:white;}
 .nav_wrap ul li a:active  {color:white;}
 
@@ -100,12 +107,21 @@
     visibility: inherit;
     left:35px;
     bottom:36px;
-    color:#aaaaaa;
+    color:#a2a2a2;
     font-size: 10pt;
     position: absolute;
     
     width:220px;
     overflow-x: hidden;
+}
+
+#footer_m {
+    position: absolute;
+    color:#aaaaaa;
+    font-size: 10.5pt;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
 }
 
 .nav_wrap #footer #footer_contact {
@@ -115,7 +131,7 @@
 
 /*------MenuToggleBtn------*/
 #nav_bar .nav_icon {
-    margin: 36px 33px;
+    margin: 40px 33px;
 }
 #top_app #nav_icon{
     margin: 16px 20px;
@@ -206,6 +222,23 @@
     background: #FFF;
 }
 
+#nav_symbol {
+    width: 90px; height: 90px;
+    margin-top: 41px;
+    margin-left: 37px;
+    background-image: url(/img/nav_symbol.png);
+    background-repeat: no-repeat;
+}
+
+#nav_symbol_m {
+    background-image: url(/img/nav_symbol.png);
+    background-repeat: no-repeat;
+    width: 90px; height: 90px;
+    margin-left: calc(50% - 45px);
+    margin-top: 80px;
+    position:absolute;    
+}
+
 #nav_list {
     overflow: hidden
 }
@@ -229,8 +262,8 @@
         -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
-    left:-31px;
-    bottom: 95px;
+    left:-30px;
+    bottom: 93px;
 }
 #top_bar #logo {
     left: calc(50% - 70px);

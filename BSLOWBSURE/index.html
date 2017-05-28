@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0">
 
 <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.js"></script>
@@ -18,8 +18,10 @@
 <body>
 <!----CLASS NAME STARTED WITH 're-' MEANS RESPONSIBLE---->
 <!----SIDE BAR DEFAULT---->
-<div id="app" class="re-hide-small">
-    <div class="nav_wrap" id="side_nav_wrap">
+<div id="app">
+    <div class="nav_wrap re-hide-small" id="side_nav_wrap">
+        <div id="nav_symbol">
+        </div>
         <ul id="nav_list">
             <li> <a href="#scene00" id="menu01" alt="HOME"> HOME </a>
             <li> <a href="#scene02" id="menu02" alt="MEET SEO"> MEET SEO </a>
@@ -27,14 +29,14 @@
             <li> <a href="#scene05" id="menu05" alt="CONTACT"> CONTACT </a>
         </ul>
         <div id="footer">
-            <p1 class="re-hide-narrow">B SLOW B SURE<br>DESIGNER SEO EUGENE<br>WEB. MOBILE. UX&#47;UI. GRAPHIC<br><br>SEOUL, REPUBLIC OF KOREA<br><br></p1>
+            <p1 class="re-hide-narrow">B SLOW B SURE<br>DESIGNER SEO EUGENE</br>WEB. MOBILE. UX&#47;UI. GRAPHIC<br><br>SEOUL, REPUBLIC OF KOREA<br><br></p1>
             <p1 id="footer_contact">&#43;82&#41;10.8886.4272<br>SEOUUUU&#64;GMAIL.COM<br><br></p1>
             <p1>&copy;2017. Eugene Seo all rights reserved.</p1>
         </div>
     </div>
 
     <nav>
-        <div id="nav_bar">
+        <div id="nav_bar" class="re-hide-small">
             <div class="nav_icon" onclick="togNav()">
               <span></span>
               <span></span>
@@ -64,12 +66,21 @@
           <span></span>
         </div>
         
+        <div id="nav_symbol_m"></div>
+        
         <ul id="nav_list">
-            <li> <a href="#scene00" id="menu01" alt="HOME" onclick="togNav_close()"> HOME </a>
-            <li> <a href="#scene02" id="menu02" alt="MEET SEO" onclick="togNav_close()"> MEET SEO </a>
-            <li> <a href="#scene03" id="menu04" alt="WORKS" onclick="togNav_close()"> WORKS </a>
-            <li> <a href="#scene04" id="menu05" alt="CONTACT" onclick="togNav_close()"> CONTACT </a>
+            <li> <a href="#scene00" id="menu01" alt="HOME" onclick="togNav_close()"> HOME </a> </li>
+            <li> <span> </span></li>
+            <li> <a href="#scene02" id="menu02" alt="MEET SEO" onclick="togNav_close()"> MEET SEO </a> </li>
+            <li> <span> </span></li>
+            <li> <a href="#scene03" id="menu04" alt="WORKS" onclick="togNav_close()"> WORKS </a> </li>
+            <li> <span> </span></li>
+            <li> <a href="#scene04" id="menu05" alt="CONTACT" onclick="togNav_close()"> CONTACT </a> </li>
         </ul>
+        
+        <div id="footer_m">
+            <p1>&copy;2017. &#91; BSLOW &#42; BSURE &#93;  Eugene Seo all rights reserved.</p1>
+        </div>
     </div>
 
     <nav id="top_bar">
