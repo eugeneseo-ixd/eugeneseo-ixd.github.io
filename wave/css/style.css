@@ -1,7 +1,83 @@
-#img {
+body {
+    overflow-x: hidden;
+    margin : 0 auto;
+}
+
+#wrapper {
+    width: 2000px;
+    position: absolute;
+    left:50%;
+    margin-left: -1000px;
+}
+
+#image01 {
     display: block;
-    width: 2590px;
-    height: 2500px;
-    background-image: url(../img/LINEtask.jpg);
+    width:2000px;
+    height:3786px;
+    background-image: url(../img/LINEtask_web_portfolio_1.jpg);
     background-repeat: no-repeat;
+}
+
+#image02 {
+    display: block;
+    position: relative;
+    width:2000px;
+    height:1393px;
+    background-image: url(../img/LINEtask_web_portfolio_2.jpg);
+    background-repeat: no-repeat;
+
+}
+
+#image03 {
+    display: block;
+    position: relative;
+    width:2000px;
+    height:1033px;
+    background-image: url(../img/LINEtask_web_portfolio_3.jpg);
+    background-repeat: no-repeat;
+
+}
+
+#image04 {
+    display: block;
+    position: relative;
+    width:2000px;
+    height:2664px;
+    background-image: url(../img/LINEtask_web_portfolio_4.jpg);
+    background-repeat: no-repeat;
+
+}
+
+#image05 {
+    display: block;
+    position: relative;
+    width:2000px;
+    height:462px;
+    background-image: url(../img/LINEtask_web_portfolio_5.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.linkBtn {
+    display: block;
+    position: relative;
+    left:50%;
+    margin-left: -145px;
+    width: 290px;
+    height: 60px;
+    background-color: #5be6dc;
+    background-image: url(../img/btnText.png);
+}
+
+.linkBtn:hover{
+    background-color: #9c66fc;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+}
+
+.linkBtn:active {
+    background-color: #3b5998;
+
+    -webkit-transition: all 0.0s;
+            transition: all 0.0s;
 }
