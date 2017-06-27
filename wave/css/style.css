@@ -13,7 +13,7 @@ body {
 #image01 {
     display: block;
     width:2000px;
-    height:3690px;
+    height:3656px;
     background-image: url(../img/LINEtask_web_portfolio_1.jpg);
     background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@ body {
     display: block;
     position: relative;
     width:2000px;
-    height:1393px;
+    height:1475px;
     background-image: url(../img/LINEtask_web_portfolio_2.jpg);
     background-repeat: no-repeat;
 
@@ -32,17 +32,26 @@ body {
     display: block;
     position: relative;
     width:2000px;
-    height:1033px;
+    height:937px;
     background-image: url(../img/LINEtask_web_portfolio_3.jpg);
     background-repeat: no-repeat;
 
+}
+
+#image03_gif {
+    display: block;
+    position: relative;
+    width:600px; height:355px;
+    left: 50%; margin-left: -300px;
+    background-image: url(../img/button.gif);
+    background-repeat: no-repeat;
 }
 
 #image04 {
     display: block;
     position: relative;
     width:2000px;
-    height:2664px;
+    height:2537px;
     background-image: url(../img/LINEtask_web_portfolio_4.jpg);
     background-repeat: no-repeat;
 
@@ -52,7 +61,7 @@ body {
     display: block;
     position: relative;
     width:2000px;
-    height:528px;
+    height:440px;
     background-image: url(../img/LINEtask_web_portfolio_5.jpg);
     background-repeat: no-repeat;
 
@@ -81,3 +90,4 @@ body {
     -webkit-transition: all 0.0s;
             transition: all 0.0s;
 }
+
