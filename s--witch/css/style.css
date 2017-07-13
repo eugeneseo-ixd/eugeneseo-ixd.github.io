@@ -271,10 +271,6 @@ a {
     position:absolute;
 }
 
-#top_app #logo {
-    bottom: 21px;
-    position: fixed;
-}
 #logo:hover {
     background-image: url(/img/SWITCHICONhover.png);
 }
@@ -282,9 +278,10 @@ a {
     background-image: url(/img/SWITCHICONonclick.png);
 }
     
-#top_bar #logo {
-    left: 21px;
-    top: 13px;
+#top_app #logo {
+    left: 15px;
+    bottom: 15px;
+    position: fixed;
 }
 
 #top_bar {
