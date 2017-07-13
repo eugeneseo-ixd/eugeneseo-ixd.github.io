@@ -267,15 +267,15 @@ a {
 #logo {
     width: 45px; height: 77px;
     left: 21px; bottom: 40px;
-    background-image: url(/img/SWITCHICONa.png);
+    background-image: url(../img/SWITCHICONa.png);
     position:absolute;
 }
 
 #logo:hover {
-    background-image: url(/img/SWITCHICONhover.png);
+    background-image: url(../img/SWITCHICONhover.png);
 }
 #logo:active {
-    background-image: url(/img/SWITCHICONonclick.png);
+    background-image: url(../img/SWITCHICONonclick.png);
 }
     
 #top_app #logo {
