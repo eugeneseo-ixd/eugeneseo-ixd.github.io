@@ -46,15 +46,15 @@
             </div>
             
             <ul id="pg_nav" class="re-hide-narrow">
-                <li> <a href="#scene01"> &diams; </a> </li>
-                <li> <a href="#scene02"> &diams; </a> </li>
-                <li> <a href="#scene04"> &diams; </a> </li>
-                <li> <a href="#scene05"> &diams; </a> </li>
+                <li> <a href="#scene01">  </a> </li>
+                <li> <a href="#scene02">  </a> </li>
+                <li> <a href="#scene04">  </a> </li>
+                <li> <a href="#scene05">  </a> </li>
             </ul>
             
             <a href="#scene01">
-                <div style ="cursor:pointer" id="logo" onclick="#scene00">
-            </div>
+                <div style ="cursor:pointer" id="logo">
+                </div>
             </a>
         </div>
     </nav>
@@ -63,14 +63,8 @@
 <!----TOP BAR ON SMALL SCREEN---->
 <div id="top_app" class="re-hide-large">
     <div class="nav_wrap" id="top_nav_wrap">
-        <div id="nav_icon_close" onclick="togNav_close()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        
         <div id="nav_symbol_m"></div>
-        
+
         <ul id="nav_list">
             <li> <a href="#scene01" id="menu01" alt="HOME" onclick="togNav_close()"> HOME </a> </li>
             <li> <span> </span></li>
@@ -80,26 +74,24 @@
             <li> <span> </span></li>
             <li> <a href="#scene04" id="menu05" alt="CONTACT" onclick="togNav_close()"> CONTACT </a> </li>
         </ul>
-        
+
         <div id="footer_m">
             <p1>&copy;2017. S--witch Eugene Seo all rights reserved.</p1>
         </div>
     </div>
 
-    <a href="#scene01">
-        <div style ="cursor:pointer" id="logo" onclick="#scene00"> </div>
-    </a>
-
-    <nav id="top_bar">
-
-        <div id="nav_icon" onclick="togNav_open()">
+    
+    <nav id="top_bar" >
+        <div class="nav_icon" onclick="togNav_m()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-
-        <div id="contact"></div>
     </nav>
+
+    <a href="#scene01">
+        <div style ="cursor:pointer" id="logo" onclick="#scene00"> </div>
+    </a>
 </div>
 
 </head>
@@ -161,15 +153,50 @@ function togNav() {
         nav_bar.style.marginLeft = '0';
     }
 }
- 
-function togNav_open() {
-    var nav_wrap2 = document.getElementById("top_nav_wrap");    
-    nav_wrap2.style.marginLeft = '0';
-}
 
+function togNav_m() {
+    var nav_btn = document.getElementById("top_bar");
+    var nav_wrap = document.getElementById("top_nav_wrap")
+    
+    if (nav_btn.style.width < '60px') {
+
+        nav_btn.style.width = 'calc(100%)';
+        nav_btn.style.height = 'calc(100%)';
+        nav_btn.style.top = '0';
+        nav_btn.style.right = '0';
+        nav_btn.style.borderRadius = '0';
+        nav_btn.style.backgroundColor = '#4d5258';
+        
+        nav_wrap.style.opacity = '100';
+        nav_wrap.style.zIndex = '99';
+    
+    } else {
+    
+        nav_btn.style.width = '45px';
+        nav_btn.style.height = '45px';
+        nav_btn.style.top = '10px';
+        nav_btn.style.right = '10px';
+        nav_btn.style.borderRadius = '7px';
+        nav_btn.style.backgroundColor = '#FFF';
+
+        nav_wrap.style.zIndex = '-99';
+        nav_wrap.style.opacity = '0';
+    }
+}
+    
 function togNav_close() {
-    var nav_wrap2 = document.getElementById("top_nav_wrap");
-    nav_wrap2.style.marginLeft = '-100%';
+    var nav_btn = document.getElementById("top_bar");
+    var nav_wrap = document.getElementById("top_nav_wrap")
+
+    nav_btn.style.width = '45px';
+    nav_btn.style.height = '45px';
+    nav_btn.style.top = '10px';
+    nav_btn.style.right = '10px';
+    nav_btn.style.borderRadius = '7px';
+    nav_btn.style.backgroundColor = '#FFF';
+
+    nav_wrap.style.zIndex = '-99';
+    nav_wrap.style.opacity = '0';
 }
     
 </script>

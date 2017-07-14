@@ -25,7 +25,6 @@ a {
 	margin:0; padding:0;
     text-decoration: none;
     font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: -0.4pt;
 }
 
 #nav_bar {
@@ -33,7 +32,7 @@ a {
     height: 100%;
     width: 80px;
     position: fixed;
-    -webkit-transition: all 0.7s;
+    -webkit-transition: all 0.6s;
 }
 
 #con_wrap {
@@ -44,34 +43,37 @@ a {
 }
 
 #app .nav_wrap {
-    -webkit-transition: all 0.7s;
+    -webkit-transition: all 0.6s;
     margin-left: -290px;
 	width: 290px; height: 100%;
     background-color: #4d5258;    
     position: fixed;
 }
 
+
+
 #top_app .nav_wrap {
-    -webkit-transition: all 0.7s;
-    width: 100%; height: 100%;
-    margin-left: -100%;
-    background-color: #4d5258;
+    -webkit-transition: all 0.6s;
+
+    opacity: 0;
+    width: 100%; height: calc(100% - 55px);
+    left: 0; top: 55px;
+    
     position: fixed;
-    overflow: hidden;
-    z-index: 99;
+    z-index: -99;    
 }
 
 #top_app .nav_wrap ul {
-    width: 100%;
-    height: 250px;
-    font-size: 26pt;
-    line-height: 1.8;
+    width: 100%;    height: 250px;
     top: 50%;
-    margin-top: -90px;
-    list-style:none;
+    margin-top: -130px;
+    
+    font-size: 25pt;
+    line-height: 1.8;
     text-align: center;
-    overflow: hidden;
-    position:absolute;
+    list-style:none;
+    
+    position: absolute;
 }
 
 #top_app .nav_wrap ul li span {
@@ -79,6 +81,22 @@ a {
     width:100%;
     display: block;
     background-color: #767676;
+}
+#top_bar {
+    overflow:hidden;
+
+    width:45px; height: 45px;
+    top: 10px; right: 10px;
+
+    background-color: #FFF;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #4d5258;
+    position: fixed;
+    
+    -webkit-transition: all 0.2s;
+    z-index: 9;
 }
 
 #app .nav_wrap ul {
@@ -129,18 +147,15 @@ a {
 #nav_bar .nav_icon {
     margin: 40px 31px;
 }
-#top_app #nav_icon{
-    margin: 14px 14px;
-    float:right;
-}
 
-#nav_icon_close {
-    margin: 22px 20px;
+#top_app .nav_icon {
+    top: 24px;
+    right: 23px;
     float: right;
+    position: fixed;
 }
 
-
-.nav_icon, #nav_icon,  #nav_icon_close {
+.nav_icon {
   width: 18px;
   height: 21px;
   position: relative;
@@ -154,7 +169,7 @@ a {
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-.nav_icon span, #nav_icon span, #nav_icon_close span {
+.nav_icon span {
   background: #4379e6;
   display: block;
   position: absolute;
@@ -171,29 +186,28 @@ a {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-.nav_icon span:nth-child(1), #nav_icon span:nth-child(1) {
+.nav_icon span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-.nav_icon span:nth-child(2), #nav_icon span:nth-child(2) {
+.nav_icon span:nth-child(2) {
   top: 6px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-.nav_icon span:nth-child(3), #nav_icon span:nth-child(3) {
+.nav_icon span:nth-child(3) {
   top: 12px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-
-.nav_icon.open span:nth-child(1), #nav_icon_close span:nth-child(1) {
+.nav_icon.open span:nth-child(1) {
   left: 2px; top: -1px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -202,7 +216,7 @@ a {
   
   width: 110%;
 }
-.nav_icon.open span:nth-child(2), #nav_icon_close span:nth-child(2) {
+.nav_icon.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
@@ -214,20 +228,30 @@ a {
   transform: rotate(-45deg);
   
   width:110%;
-} 
-#nav_icon_close span:nth-child(3) {
-  left :2px; top: -1px;
+}
+
+#top_app .nav_icon.open span:nth-child(1) {
+  left: 2px; top: -1px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+    
+  background: #FFF;
+  
+  width: 110%;
+}
+.nav_icon.open span:nth-child(3) {
+  left :2px; top: 13px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+    
+  background: #FFF;
   
   width:110%;
-}
-
-#nav_icon_close span {
-    background: #FFF;
-}
+} 
 
 #nav_symbol {
     width: 90px; height: 90px;
@@ -245,13 +269,9 @@ a {
     position:absolute;    
 }
 
-#nav_list {
-    overflow: hidden
-}
-
 #nav_bar ul {
-    font-size: 10pt;
-    line-height: 1.2;
+    font-size: 3pt;
+    line-height: 1.5;
     top: 50%;
     margin-left: 35px;
     margin-top: -65px;
@@ -276,25 +296,18 @@ a {
 #logo:hover {
     background-image: url(../img/SWITCHICONhover_m.png);
 }
+
 #logo:active {
     background-image: url(../img/SWITCHICONonclick_m.png);
 }
     
 #top_app #logo {
-    left: 15px;
-    bottom: 15px;
+    left: 10px;
+    bottom: 10px;
     position: fixed;
 }
 
-#top_bar {
-    width:50px; height: 50px;
-    right: 0;
-    position: fixed;
-    background-color: #FFF;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #4d5258;
-}
+
 
 #scene_main {
     width:100%;
